@@ -1,0 +1,118 @@
+<!--
+The Guessing Game
+Fullstack Foundations
+Due May 18,2015
+FVCproductions
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Fullstack Foundations - Part 1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>The Guessing Game</title>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- JavaScript I made for this program. -->
+    <script type="text/javascript" src="js/guess.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Favicon (Football) -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <!-- Loading Bootstrap -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Loading Flat UI -->
+    <link rel="stylesheet" href="bower_components/flatui/css/flat-ui.css">
+    <!-- Loading Normalize.css -->
+    <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
+    <!-- Loading my own style sheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="fix" id="pad">The Guessing Game</h1> </div>
+    <div class="input" id="pad">
+        <input id="userGuess" type="text" class="form-control input-hg" placeholder="Enter a number from 1 to 100."> </div>
+    <div id="message"></div>
+    <div class="container" id="actions">
+        <div id="pad">
+            <button type="button" id="submit" class="btn btn-hg btn-success">SUBMIT GUESS</button>
+        </div>
+        <button type="button" id="reset" class="btn btn-hg btn-danger">RESET GAME</button>
+        <button type="button" id="hint" class="btn btn-hg btn-warning">HINT</button>
+    </div>
+    <div class="container" id="pad">
+        <h2>Your Guesses So Far</h2>
+        <div class="circles" id="pad">
+            <div class="col-md-2 col-md-offset-1">
+                <div class="circle" id="circle1">
+                    <p id="guess1"></p>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="circle" id="circle2">
+                    <p id="guess2"></p>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="circle" id="circle3">
+                    <p id="guess3"></p>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="circle" id="circle4">
+                    <p id="guess4"></p>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="circle" id="circle5">
+                    <p id="guess5"></p>
+                </div>
+            </div>
+        </div>
+        <div id="pad"></div>
+        <div class="circles" id="pad">
+            <div class="col-md-2 col-md-offset-1">
+                <div class="circle" id="circle6">
+                    <p id="guess6"></p>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="circle" id="circle7">
+                    <p id="guess7"></p>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="circle" id="circle8">
+                    <p id="guess8"></p>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="circle" id="circle9">
+                    <p id="guess9"></p>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="circle" id="circle10">
+                    <p id="guess10"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <footer class="footer">
+            <h3>Made by <a href="http://fvcproductions.com" target="_blank">FVCproductions</a> with <i class="fui-heart"></i> for <a href="http://fullstackacademy.com" target="_blank">Fullstack Academy Foundations</a>. See repo <a href="#" target="_blank">here</a>.</h3> </footer>
+    </div>
+</body>
+
+</html>
