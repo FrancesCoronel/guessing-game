@@ -1,4 +1,4 @@
-/** 
+/**
  * The Guessing Game
  * FVCproductions
  * guess.js
